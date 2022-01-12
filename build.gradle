@@ -20,14 +20,13 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	//implementation group: 'org.springframework', name: 'spring-tx', version: '5.3.14'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.2'
-	//implementation 'junit:junit:4.12'
+	implementation group: 'javax.annotation', name: 'javax.annotation-api', version: '1.3.2'
+
 
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	runtimeOnly 'com.h2database:h2'
-	//runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
 
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
